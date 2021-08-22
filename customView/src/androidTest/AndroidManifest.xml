@@ -1,0 +1,9 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="com.example.agpreproduction.customview.TestApplication"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name"/>
+</manifest>

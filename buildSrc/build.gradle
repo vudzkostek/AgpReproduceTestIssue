@@ -1,0 +1,17 @@
+buildscript {
+    apply from: '../dependencies.gradle'
+
+    repositories {
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        classpath gradlePlugins.kotlinDsl
+    }
+}
+
+apply plugin: 'org.gradle.kotlin.kotlin-dsl'
+
+repositories {
+    gradlePluginPortal()
+}

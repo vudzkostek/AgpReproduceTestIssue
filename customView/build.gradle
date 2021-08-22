@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion BuildConfig.TARGET_SDK
+
+    defaultConfig {
+        minSdkVersion BuildConfig.MIN_SDK
+        targetSdkVersion BuildConfig.TARGET_SDK
+        testApplicationId 'com.example.agpreproduction.customview.test'
+        testInstrumentationRunner 'com.example.agpreproduction.runner.AndroidTestRunner'
+    }
+
+    compileOptions {
+        sourceCompatibility BuildConfig.JAVA_VERSION_NAME
+        targetCompatibility BuildConfig.JAVA_VERSION_NAME
+    }
+
+    kotlinOptions {
+        jvmTarget = BuildConfig.JAVA_VERSION_NAME
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+    implementation deps.androidX.appCompat
+    implementation deps.androidX.ktxCore
+
+    androidTestImplementation deps.material
+    androidTestImplementation deps.junit
+    androidTestImplementation deps.androidX.test.core
+    androidTestImplementation deps.androidX.test.espresso
+    androidTestImplementation deps.androidX.test.rules
+    androidTestImplementation deps.androidX.test.runner
+}

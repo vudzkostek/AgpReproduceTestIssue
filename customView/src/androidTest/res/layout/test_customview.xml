@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.example.agpreproduction.customview.CustomView
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="55dp"
+            android:maxLength="6" />
+
+        <com.example.agpreproduction.customview.CustomView
+            android:id="@+id/view_2"
+            android:layout_width="262dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:maxLength="6" />
+
+        <com.example.agpreproduction.customview.CustomView
+            android:id="@+id/view_3"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:maxLength="6" />
+
+        <com.example.agpreproduction.customview.CustomView
+            android:id="@+id/view_4"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:maxLength="5" />
+
+        <com.example.agpreproduction.customview.CustomView
+            android:id="@+id/view_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:maxLength="4" />
+
+        <com.example.agpreproduction.customview.CustomView
+            android:id="@+id/view_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:maxLength="4" />
+    </LinearLayout>
+</ScrollView>
